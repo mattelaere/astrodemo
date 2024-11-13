@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 const pageTitle = "About Me";
 const identity = {
@@ -36,11 +38,8 @@ const goal = 3;
             }
         </style>
     </head>
-
+    <Header />
     <body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
         <title>{pageTitle}</title>
         <h1>About Isha</h1>
 
@@ -86,5 +85,9 @@ const goal = 3;
                 <p>My goal is not 3 days.</p>
             )
         }
+        <Footer />
+        <script>
+            import "../scripts/menu.js";
+        </script>
     </body>
 </html>
