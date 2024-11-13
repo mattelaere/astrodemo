@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 const pageTitle = "About Me";
 const identity = {
     firstName: "Isha",
@@ -26,7 +27,7 @@ const goal = 3;
         <style define:vars={{ skillColor, fontWeight, textCase }}>
             h1 {
                 color: purple;
-                font-size: 4rem;
+                font-size: 3rem;
             }
             .skill {
                 color: var(--skillColor);
@@ -41,7 +42,7 @@ const goal = 3;
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
         <title>{pageTitle}</title>
-        <h1>I'm Isha and this is my new Astro site!</h1>
+        <h1>About Isha</h1>
 
         <p>
             I am working through Astro's introductory tutorial. This is the
