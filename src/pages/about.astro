@@ -8,7 +8,7 @@ const identity = {
 };
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
+const skillColor = "navy";
 const happy = true;
 const finished = false;
 const goal = 3;
@@ -26,6 +26,10 @@ const goal = 3;
                 color: purple;
                 font-size: 4rem;
             }
+            .skill {
+                color: green;
+                font-weight: bold;
+            }
         </style>
     </head>
 
@@ -34,7 +38,7 @@ const goal = 3;
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
         <title>{pageTitle}</title>
-        <h2>I'm Isha and this is my new Astro site!</h2>
+        <h1>I'm Isha and this is my new Astro site!</h1>
 
         <p>
             I am working through Astro's introductory tutorial. This is the
@@ -65,7 +69,7 @@ const goal = 3;
         </ul>
         <p>My skills are:</p>
         <ul>
-            {skills.map((skill) => <li>{skill}</li>)}
+            {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
         {happy && <p>I am happy to be learning Astro!</p>}
 
